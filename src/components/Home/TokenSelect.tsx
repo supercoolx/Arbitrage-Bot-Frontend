@@ -4,7 +4,7 @@ import useWeb3 from "redux/actions/web3Action";
 import useToken from "redux/actions/tokenAction";
 import { WithContext as ReactTags } from "react-tag-input";
 import "assets/css/react_tag_input.css";
-import TokenComponent from "components/Token";
+import TokenComponent from "components/utils/Token";
 
 const TokenSelect = () => {
 	const { network } = useWeb3();

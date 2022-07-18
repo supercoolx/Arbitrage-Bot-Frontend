@@ -9,7 +9,7 @@ const TokenComponent = ({ token }: { token: Token }) => {
     const [price, setPrice] = useState<string>('---');
     const { web3, block } = useWeb3();
     useEffect(() => {
-        if (!Chainlink[token.symbol]) setPrice('N/A');
+        if (!Chainlink[token.symbol]) return setPrice('N/A');
         const contract = new web3.eth.Contract(ChainlinkABI as AbiItem[], Chainlink[token.symbol]);
         contract.methods.latestAnswer().call()
         .then((res: string) => {
@@ -20,7 +20,7 @@ const TokenComponent = ({ token }: { token: Token }) => {
     }, [block.number, token.symbol]);
 
     return (
-        <div className="flex gap-5 p-3 border">
+        <div className="flex gap-5 p-3 border shadow-md">
             <img src={token.logoURI} className="w-16 h-16" alt="" />
             <div>
                 <div>{token.name} ($ {price})</div>
