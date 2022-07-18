@@ -1,0 +1,35 @@
+{
+  "name": "front-end",
+  "plugins": [
+    {
+      "name": "TailwindCSS",
+      "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.",
+      "url": "https://tailwindcss.com/docs"
+    },
+    {
+      "name": "CSS / styled-jsx",
+      "description": "CRA comes with built-in support for CSS and CSS Modules.",
+      "url": "https://create-react-app.dev/docs/adding-a-stylesheets"
+    },
+    {
+      "name": "React Redux",
+      "description": "Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
+      "url": "https://redux.js.org/introduction/getting-started"
+    },
+    {
+      "name": "eslint",
+      "description": "",
+      "url": ""
+    },
+    {
+      "name": "jest",
+      "description": "",
+      "url": ""
+    },
+    {
+      "name": "no",
+      "description": "",
+      "url": ""
+    }
+  ]
+}
