@@ -10,7 +10,7 @@ const TokenSelect = () => {
 	const { network } = useWeb3();
 	const { tokens, changeToken } = useToken();
 	const availableTokens = useMemo(() => 
-		Token.filter(t => t.chainId === network)
+		Token.filter(t => t.chainId.toString() === network)
 		.map(t => ({ ...t, text: `${t.name} (${t.symbol})`}))
 	, [network]);
 

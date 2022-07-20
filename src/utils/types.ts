@@ -39,3 +39,8 @@ export type SwapData = {
     protocols: [[ Protocol[] ]]
     tx: Transaction
 }
+
+export type CallData = [
+    address: string,
+    byteEncoded: string
+]
